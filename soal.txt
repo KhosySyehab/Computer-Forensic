@@ -1,0 +1,17 @@
+TUGAS COMPUTER FORENSIC 
+
+Tugas A.
+Kelp Ganjil (1, 3, 5, 7, 9) membuat image OS Windows.
+kelp Genap (2, 4, 6, 8, 10) membuat image OS Linux.
+
+1. Buatkan image dengan OS Windows / Linux. Letakkan di Google Drive / GitHub masing-masing. Tulis link google drive  / GitHub di Google Sheet "Tugas Computer Forensic".
+2. Di dalam OS tersebut ada file yang sudah terhapus / tersembunyi / termodifikasi dengan keyword tertentu.
+
+
+Tugas B.
+Kelp genap mengerjakan image dari kelp ganjil & sebaliknya. Misal kelp 1 mengerjakan image dari kelp 2 dan sebaliknya.
+Pasangan pengerjaan:
+1 - 2, 3 - 4, dst sampai 9 - 10.
+Dari image yang kelp kalian dapatkan, carilah:
+1. File yang terhapus / tersembunyi / termodifikasi.
+2. Credential siapa (username) yang dipakai untuk melakukan perubahan di atas, kapan hal tsb terjadi dan data lain yang kalian anggap perlu.

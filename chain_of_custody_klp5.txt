@@ -1,0 +1,36 @@
+============================================================
+ CHAIN OF CUSTODY - COMPUTER FORENSIC EVIDENCE
+ Mata Kuliah : Forensika Digital
+ Kelompok    : 5 (Ganjil) - OS Windows (NTFS)
+============================================================
+
+ Examiner     : khosy
+ Acquire Time : 2026-10-19 08:18:28
+ Hostname     : DESKTOP-EOGBIUA
+ OS           : Linux 6.6.87.2-microsoft-standard-WSL2 x86_64
+ Tool         : dd, mkfs.ntfs (ntfs-3g), qemu-img
+
+------------------------------------------------------------
+ EVIDENCE FILES
+------------------------------------------------------------
+
+ [1] win_disk_ganjil5_okt2026.raw
+     Format : RAW disk image
+     Size   : 256M
+     MD5    : 045c4d4d16f496aecd6f626d40c0286d
+     SHA256 : 2385867aab3fff9f688d6195b944318cec41dc8c7511a5d7430296818842eec3
+
+ [2] win_disk_ganjil5_okt2026.vhd
+     Format : Virtual Hard Disk (VHD/VPC)
+     Size   : 1.6M
+     MD5    : 70f163dceb018238a8d1b6f6b93258b7
+     SHA256 : 8be2098c6e742b421655049f64943f28c9ed967cd7fb1523369d06ecf5d2f373
+
+------------------------------------------------------------
+ KETERANGAN
+------------------------------------------------------------
+ Filesystem   : NTFS (Volume Label: KLP5_SYSLOG_VOL)
+ Image Size   : 256 MB
+ Artefak      : 1 file tersembunyi (NTFS hidden attribute)
+ Keyword      : REMOTE_AKSES_RAHASIA_KLP5
+============================================================
