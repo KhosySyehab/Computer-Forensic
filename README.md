@@ -1,19 +1,23 @@
 # 🔍 Computer Forensic — Kelompok 5 (Ganjil)
 
-> **Mata Kuliah:** Forensika Digital  
-> **Tugas:** A — Pembuatan Disk Image OS Windows  
-> **Kelompok:** 5 (Ganjil) | **OS Target:** Windows (NTFS)  
-> **Examiner:** Kelompok 5 | **Tanggal Akuisisi:** 2026-10-19 08:18:28 WIB
+## Anggota Kelompok 5
+
+| No. | Nama Mahasiswa  |
+| :---: | :--- |
+| 1 | Aras Rizky Ananta |
+| 2 | Muhammad Khosyi Syehab |
+| 3 | Clarissa Aydin Rahmazea |
+| 4 | I Dewa Made Satya Raditya |
 
 ---
 
-## 📋 Latar Belakang
+## Latar Belakang
 
 Tugas ini merupakan bagian dari praktikum Forensik Digital. Kelompok 5 bertugas membuat sebuah **disk image berformat Windows (NTFS)** yang di dalamnya terdapat artefak forensik berupa **file tersembunyi** menggunakan NTFS hidden attribute.
 
 ---
 
-## 🗃️ Skenario Forensik
+## Skenario Forensik
 
 Seorang administrator sistem bernama **`khosy`** ditemukan melakukan akses jarak jauh ke server lab di luar jam operasional. Ia menyembunyikan log sesinya menggunakan NTFS hidden attribute agar tidak terdeteksi oleh audit biasa.
 
@@ -21,7 +25,7 @@ Tugas investigator adalah menemukan file log tersembunyi tersebut beserta bukti 
 
 ---
 
-## 🛠️ Metodologi Pembuatan Image
+## Metodologi Pembuatan Image
 
 ### Tools yang Digunakan
 
@@ -56,13 +60,13 @@ Tugas investigator adalah menemukan file log tersembunyi tersebut beserta bukti 
 
 ---
 
-## 📁 Struktur File di Dalam Image
+## Struktur File di Dalam Image
 
 | Nama File | Status | Keterangan |
 |-----------|--------|------------|
 | `inventaris_perangkat_lab.txt` | Visible | File decoy — daftar inventaris perangkat lab |
 | `jadwal_backup_server.txt` | Visible | File decoy — jadwal backup server rutin |
-| `session_log_admin_remote.txt` | **Hidden** ⚠️ | **Artefak utama** — log sesi remote tidak sah |
+| `session_log_admin_remote.txt` | **Hidden** | **Artefak utama** — log sesi remote tidak sah |
 
 ### Isi File Tersembunyi (`session_log_admin_remote.txt`)
 
@@ -75,7 +79,7 @@ File ini berisi log sesi SSH administrator yang dilakukan secara tidak resmi, me
 
 ---
 
-## 📦 Output & Deliverable
+## Output & Deliverable
 
 ### Isi ZIP (`FORDIG_Windows_Evidence_Klp5.zip`)
 
@@ -97,7 +101,7 @@ FORDIG_Windows_Evidence_Klp5.zip
 
 ---
 
-## 🔗 Link Evidence
+## Link Evidence
 
 | Platform | Evidence |
 |----------|------|
@@ -105,20 +109,20 @@ FORDIG_Windows_Evidence_Klp5.zip
 
 ---
 
-## ✅ Cross-Check Kesesuaian Soal
+## Cross-Check Kesesuaian Soal
 
 | Syarat Soal | Status |
 |---|---|
-| Kelompok ganjil membuat image OS Windows | ✅ NTFS filesystem (Windows native) |
-| Image dapat diakses via Google Drive/GitHub | ✅ ZIP siap upload |
-| Di dalam OS ada file tersembunyi + keyword | ✅ `session_log_admin_remote.txt` + `REMOTE_AKSES_RAHASIA_KLP5` |
-| Investigator dapat temukan file tersembunyi | ✅ Detectable via Autopsy / FTK Imager |
-| Investigator dapat temukan username pelaku | ✅ `*****` (di dalam isi file + NTFS metadata) |
-| Investigator dapat temukan waktu kejadian | ✅ Timestamp `********` (file content + NTFS MFT) |
+| Kelompok ganjil membuat image OS Windows | (Done )NTFS filesystem (Windows native) |
+| Image dapat diakses via Google Drive/GitHub | (Done) ZIP siap upload |
+| Di dalam OS ada file tersembunyi + keyword | (Done) `session_log_admin_remote.txt` + `REMOTE_AKSES_RAHASIA_KLP5` |
+| Investigator dapat temukan file tersembunyi | (Done) Detectable via Autopsy / FTK Imager |
+| Investigator dapat temukan username pelaku | (Done) `*****` (di dalam isi file + NTFS metadata) |
+| Investigator dapat temukan waktu kejadian | (Done) Timestamp `********` (file content + NTFS MFT) |
 
 ---
 
-## 🧰 Cara Analisis (Petunjuk untuk Investigator)
+## Cara Analisis (Petunjuk untuk Investigator)
 
 1. Download dan ekstrak ZIP
 2. Buka `win_disk_ganjil5_okt2026.raw` atau `.vhd` menggunakan:
