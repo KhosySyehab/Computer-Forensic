@@ -56,8 +56,6 @@ Tugas investigator adalah menemukan file log tersembunyi tersebut beserta bukti 
 5. Unmount, konversi ke VHD, buat chain of custody, ZIP
 ```
 
-> Script lengkap tersedia di [`build_image.sh`](./build_image.sh)
-
 ---
 
 ## Struktur File di Dalam Image
