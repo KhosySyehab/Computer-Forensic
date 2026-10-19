@@ -1,4 +1,4 @@
-# 🔍 Computer Forensic — Kelompok 5 (Ganjil)
+# Computer Forensic - Kelompok 5 (Ganjil)
 
 ## Anggota Kelompok 5
 
